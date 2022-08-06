@@ -267,6 +267,8 @@ function removeCurentNeovim(){
 		msg "Removing old nvim config files"
 
 		rm -rf $HOME/.config/nvim
+		rm -rf $HOME/.local/share/nvim
+		rm -rf $HOME/.cache/nvim
 
 		if test ! -d $HOME/.config/nvim;then
 			echo "Removing is successfully"
