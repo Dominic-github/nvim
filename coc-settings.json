@@ -1,0 +1,42 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "less",
+    "html",
+    "yaml",
+    "json",
+    "jsons",
+    "python",
+    "scss",
+    "sass",
+    "hbs",
+    "handlebars",
+    "graphql"
+  ],
+
+  "colors.filetypes": ["*"],
+
+  //config languageserver
+  "languageserver": {
+    //ccls config
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "highlight": {
+          "lsRanges": true
+        }
+      }
+    }
+  }
+}
