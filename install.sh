@@ -6,6 +6,13 @@ declare BASEDIR = $HOME
 declare ARGS_INSTALL_DEPENDENCIES=1
 declare INTERACTIVE_MODE=1
 
+function SETTIMEOUT(){
+	msg "$1"
+	timeout 5s bash <<EOT
+	sleep 10
+EOT
+}
+
 
 function usage() {
   echo "Usage: install.sh [<options>]"
@@ -151,6 +158,7 @@ echo "
 		printf "npm is successfully installed"
 	fi
 	
+	########## Yarn ##########
 echo "
 =============================
 |     	     yarn            |
@@ -218,7 +226,7 @@ echo "
 |     	    ripgrep           |
 ===============================
 "
-	if test ! $(which ripgrep); then 
+	if test ! $(which rg); then 
 		$RECOMMEND_INSTALL ripgrep
 	else
 		printf "ripgrep is successfully installed"
@@ -229,6 +237,7 @@ function confirm() {
   local question="$1"
   while true; do
     msg "$question"
+	SETTIMEOUT "Please read carefully before answering. You have 5 seconds"
     read -p "[y]es or [N]o (default: no) : " -r answer
     case "$answer" in
       y | Y | yes | YES | Yes)
