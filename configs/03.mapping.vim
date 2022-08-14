@@ -22,7 +22,8 @@ noremap <leader>q :bd <CR>
 noremap  <C-b> :Buffers <CR>
 
 "save file
-noremap <silent> <C-s> :w <CR>
+map <C-s> :w <CR>
+imap <C-s> <ESC>:w <CR>
 
 " copy text 
 vnoremap <C-c> "+y
