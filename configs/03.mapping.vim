@@ -29,7 +29,7 @@ imap <C-s> <ESC>:w <CR>
 vnoremap <C-c> "+y
 
 " paste 
-inoremap <C-v> <ESC>"+pa
+map <C-v> <ESC>"+pa
 
 " cut
 vnoremap <C-x> "+d
