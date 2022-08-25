@@ -26,11 +26,11 @@
 </br>
 </br>
 
-<img src="https://github.com/Frey1a/dotfiles/blob/main/i/nvim-terminal.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/.github/assets/nvim-terminal.jpg?raw=true">
 </br>
 </br>
 
-<img src="https://github.com/Frey1a/dotfiles/blob/main/i/nvim-search-file.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/.github/assets/nvim-search-file.jpg?raw=true">
 </br>
 </br>
 
