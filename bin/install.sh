@@ -286,8 +286,6 @@ function removeCurentNeovim(){
 			exit 1
 		fi
 	fi
-
-
 }
 
 function moveNameFile(){

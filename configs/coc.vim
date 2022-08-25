@@ -21,6 +21,7 @@ let g:coc_global_extensions = [
    \ 	'coc-snippets',
    \    'coc-prettier',
    \    'coc-docker',
+   \    'coc-sql',
    \    'coc-yaml',
    \ 	'coc-tslint-plugin',
    \ 	'coc-styled-components',
