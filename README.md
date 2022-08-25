@@ -11,25 +11,29 @@
 
 </br>
 
-<img src="https://github.com/Frey1a/dotfiles/blob/main/image/Screenshot/nvim-start.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/.github/assets/nvim-start.jpg?raw=true">
 </br>
 </br>
 
 <details>
   <summary>More Screenshot</summary>
  
-<img src="https://github.com/Frey1a/dotfiles/blob/main/image/Screenshot/nvim-codding.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/.github/assets/nvim-coding.jpg?raw=true">
 </br>
 </br>
 
-<img src="https://github.com/Frey1a/dotfiles/blob/main/image/Screenshot/nvim-float-term.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/.github/assets/nvim-lazygit.jpg?raw=true">
 </br>
 </br>
 
-<img src="https://github.com/Frey1a/dotfiles/blob/main/image/Screenshot/nvim-find-file.jpg?raw=true">
+<img src="https://github.com/Frey1a/dotfiles/blob/main/i/nvim-terminal.jpg?raw=true">
 </br>
 </br>
- 
+
+<img src="https://github.com/Frey1a/dotfiles/blob/main/i/nvim-search-file.jpg?raw=true">
+</br>
+</br>
+
 </details>
 
 <br>
@@ -58,13 +62,13 @@
 ###### with bash, zsh, ...
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/bin/install.sh)
 ```
 
 ###### with fish
 
 ```bash
-bash (curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/install.sh | psub)
+bash (curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/bin/install.sh | psub)
 ```
 
 - Run nvim and ignore all errors
