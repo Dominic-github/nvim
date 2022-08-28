@@ -312,6 +312,7 @@ function Config(){
 }
 
 function removeCache(){
+		rm -rf $HOME/.config/coc
 		rm -rf $HOME/.local/share/nvim
 		rm -rf $HOME/.cache/nvim
 }
