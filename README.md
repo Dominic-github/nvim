@@ -84,7 +84,7 @@ bash (curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/bin/install.sh 
 
 - C / Cpp
 
-Using `gcc` uncomment `coc-ccls` on `.config/nvim/configs/coc.vim`
+Add `coc-ccls` on `.config/nvim/configs/coc.vim`
 
 And rerun nvim if you see
 
@@ -103,4 +103,4 @@ npm run build
 
 - Python
 
-Using `gcc` uncomment `coc-pyright` on `.config/nvim/configs/coc.vim`
+Add `coc-pyright` on `.config/nvim/configs/coc.vim`
