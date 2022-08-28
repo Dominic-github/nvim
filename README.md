@@ -103,4 +103,4 @@ npm run build
 
 - Python
 
-use `gcc` uncomment `coc-pyright` on `.config/nvim/configs/coc.vim`
+Using `gcc` uncomment `coc-pyright` on `.config/nvim/configs/coc.vim`

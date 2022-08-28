@@ -71,9 +71,9 @@ function main(){
 
 	check_neovim_min_version
 
-	installPlug
-
 	Config
+
+	installPlug
 
 	print_enjoy
 }
