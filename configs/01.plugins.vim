@@ -10,10 +10,13 @@ Plug 'tribela/vim-transparent' 				"opacity neovim
 
 "NERDtree and devicons
 Plug 'scrooloose/nerdtree'
-Plug 'ryanoasis/vim-devicons'
 Plug 'unkiwii/vim-nerdtree-sync' 		"Sync current file	
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'ryanoasis/vim-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
 
 
 "File search

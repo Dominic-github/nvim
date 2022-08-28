@@ -78,3 +78,29 @@ bash (curl -s https://raw.githubusercontent.com/Frey1a/nvim/main/bin/install.sh 
 ## Usage
 
 - Use `:verbose map` see all keymap
+- `.config/nvim/configs/mappings.vim` is all my mappings
+
+## Config
+
+- C / Cpp
+
+Using `gcc` uncomment `coc-ccls` on `.config/nvim/configs/coc.vim`
+
+And rerun nvim if you see
+
+```bash
+[coc.nvim] Unable to load global extension at /home/$(USER)/.config/coc/extensions/node_modules/coc-ccls: main
+ file ./lib/extension.js not found, you may need to build the project.
+```
+
+[Solution](https://github.com/Maxattax97/coc-ccls/issues/5):
+
+```bash
+cd ~/.config/coc/extensions/node_modules/coc-ccls
+npm i
+npm run build
+```
+
+- Python
+
+use `gcc` uncomment `coc-pyright` on `.config/nvim/configs/coc.vim`

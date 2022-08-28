@@ -6,7 +6,7 @@ let g:coc_global_extensions = [
    \	'coc-tsserver',
    \	'coc-word',
    \	'coc-css',
-   \	'coc-ccls',
+   " \	'coc-ccls',
    \	'coc-cmake',
    \	'coc-go',
    \	'coc-sh',
@@ -14,11 +14,9 @@ let g:coc_global_extensions = [
    \	'coc-html-css-support',
    \	'coc-phpls',
    \	'coc-markdownlint',
-   \ 	'coc-pyright',
-   \ 	'coc-jedi',
+   " \ 	'coc-pyright',
    \ 	'coc-tailwindcss',
    \    'coc-eslint',
-   \ 	'coc-snippets',
    \    'coc-prettier',
    \    'coc-docker',
    \    'coc-sql',
@@ -28,6 +26,7 @@ let g:coc_global_extensions = [
    \    'coc-spell-checker',
    \    'coc-highlight',
    \ 	'coc-vetur',
+   \ 	'coc-sumneko-lua',
    \	]
 
 
