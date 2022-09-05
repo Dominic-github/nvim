@@ -35,10 +35,16 @@ map <C-v> <ESC>"+pa
 vnoremap <C-x> "+d
 
 " move to first line
-noremap <A-a> <Home>
+nmap <A-a> <Home>
+imap <A-a> <Home>
+vmap <A-a> <Home>
 
 " move to end line
-noremap <C-e> <End>
+
+nmap <A-e> <End>
+imap <A-e> <End>
+vmap <A-e> <End>
+
 
 " Move lines to lines
 nnoremap <A-j> :m .+1<CR>==
