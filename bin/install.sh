@@ -129,7 +129,6 @@ function msg() {
 
 
 function main(){
-	parse_arguments "$@"
 
 	print_logo
 
@@ -182,7 +181,7 @@ function detect_platform() {
 function installPlug(){
 	#!!!!!!!!! IMPORTANT !!!!!!!
 	
-echo -e ${BBlue} "
+echo -e ${Blue} "
 
       	 Install Vim-plug          
 
@@ -196,7 +195,7 @@ fi
 
 	###########################################################
 	
-echo -e ${BBlue}"
+echo -e ${Blue}"
 
       	 Install Dependence        
 
@@ -205,7 +204,7 @@ echo -e ${BBlue}"
 SETTIMEOUT "" 1s
 
 	########## NODE JS ##########
-echo -e ${BBlue}"\n[*] Installing NodeJs ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing NodeJs ... \n" ${Color_Off}
 if ! [ $(which node) ] ; then 
 	$RECOMMEND_INSTALL nodejs
 else
@@ -217,7 +216,7 @@ fi
 
 	
 	########## NPM ##########
-echo -e ${BBlue}"\n[*] Installing Npm ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Npm ... \n" ${Color_Off}
 if ! [ $(which npm) ] ; then 
 	$RECOMMEND_INSTALL npm
 else
@@ -228,7 +227,7 @@ fi
 
 	
 	########## Yarn ##########
-echo -e ${BBlue}"\n[*] Installing Yarn ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Yarn ... \n" ${Color_Off}
 if ! [ $(which yarn) ] ; then 
 	$RECOMMEND_INSTALL yarn
 else
@@ -240,7 +239,7 @@ fi
 	
 	########## CCLS ##########
 
-echo -e ${BBlue}"\n[*] Installing Ccls ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Ccls ... \n" ${Color_Off}
 if ! [ $(which ccls) ] ; then 
 	$RECOMMEND_INSTALL ccls
 else
@@ -253,7 +252,7 @@ fi
 
 	########## BAT ##########
 
-echo -e ${BBlue}"\n[*] Installing Bat ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Bat ... \n" ${Color_Off}
 if ! [ $(which bat) ] ; then 
 	$RECOMMEND_INSTALL bat
 else
@@ -266,7 +265,7 @@ fi
 	
 	########## LAZYGIT ##########
 
-echo -e ${BBlue}"\n[*] Installing LazyGit ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing LazyGit ... \n" ${Color_Off}
 if ! [ $(which lazygit) ] ; then 
 	$RECOMMEND_INSTALL lazygit
 else
@@ -279,7 +278,7 @@ fi
 	
 	########## CTAGS ##########
 
-echo -e ${BBlue}"\n[*] Installing Ctags ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Ctags ... \n" ${Color_Off}
 if ! [ $(which ctags) ] ; then 
 	$RECOMMEND_INSTALL ctags
 else
@@ -291,7 +290,7 @@ fi
 	
 	########## RIPGREP ##########
 
-echo -e ${BBlue}"\n[*] Installing Ripgrep ... \n" ${Color_Off}
+echo -e ${Blue}"\n[*] Installing Ripgrep ... \n" ${Color_Off}
 if ! [ $(which rg) ] ; then 
 	$RECOMMEND_INSTALL ripgrep
 else
@@ -353,7 +352,7 @@ function ConfigContainer(){
 				removeCurentNeovim
 				cloneNvim
 			else
-				echo -e  ${BBlue}"[*] We will to change name nvim = nvim(old-config) on $HOME/.config" ${Color_Off}
+				echo -e  ${Blue}"[*] We will to change name nvim = nvim(old-config) on $HOME/.config" ${Color_Off}
 				moveNameFile
 				cloneNvim
       		fi
@@ -369,7 +368,7 @@ function removeCache(){
 
 function removeCurentNeovim(){
 	if test  -d  $HOME/.config/nvim;then
-		echo -e ${BBlue}"[*] Removing old nvim config files.\n" ${Color_Off}
+		echo -e ${Blue}"[*] Removing old nvim config files.\n" ${Color_Off}
 
 		rm -rf $HOME/.config/nvim
 		removeCache
@@ -388,7 +387,7 @@ function removeCurentNeovim(){
 function moveNameFile(){
 
 	if test -d $HOME/config/nvim;then
-		echo -e ${BBlue}"[*] Move nvim => nvim(old-config)...\n" ${Color_Off}
+		echo -e ${Blue}"[*] Move nvim => nvim(old-config)...\n" ${Color_Off}
 
 
 	 	mv $HOME/.config/nvim $HOME/.config/"nvim(old-config)"
@@ -408,7 +407,7 @@ function cloneNvim(){
 
 	if test ! -d $HOME/.config/nvim;then
 
-		echo -e ${BBlue}"[*] Cloning nvim ... .\n" ${Color_Off}
+		echo -e ${Blue}"[*] Cloning nvim ... .\n" ${Color_Off}
 
 		git clone --depth 1 $NV_REMOTE $HOME/.config/nvim
 
@@ -448,11 +447,8 @@ EOF
 
 function print_logo() {
 
-
-
-echo -e ${BBlue}"
+echo -e ${Blue}"
 	$(cat <<'EOF'
-
 
     ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗
     ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║
@@ -476,7 +472,7 @@ SETTIMEOUT "" 2s
 
 function print_enjoy(){
 
-echo -e ${BBlue}"
+echo -e ${Blue}"
 	$(cat <<'EOF'
 
 		███████╗███╗░░██╗░░░░░██╗░█████╗░██╗░░░██╗
