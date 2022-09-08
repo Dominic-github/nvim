@@ -129,8 +129,6 @@ function msg() {
 
 
 function main(){
-	parse_arguments "$@"
-
 	print_logo
 
 	detect_platform
