@@ -353,7 +353,7 @@ function ConfigContainer(){
 				removeCurentNeovim
 				cloneNvim
 			else
-				echo -e  ${BBlue}"[*] We will to change name nvim = nvim(old-config) on $HOME/.config " ${Color_Off}
+				echo -e  ${BBlue}"[*] We will to change name nvim = nvim(old-config) on $HOME/.config" ${Color_Off}
 				moveNameFile
 				cloneNvim
       		fi
@@ -369,7 +369,7 @@ function removeCache(){
 
 function removeCurentNeovim(){
 	if test  -d  $HOME/.config/nvim;then
-		echo -e ${BBlue}"[*] Removing old nvim config files.\n"
+		echo -e ${BBlue}"[*] Removing old nvim config files.\n" ${Color_Off}
 
 		rm -rf $HOME/.config/nvim
 		removeCache
@@ -388,7 +388,7 @@ function removeCurentNeovim(){
 function moveNameFile(){
 
 	if test -d $HOME/config/nvim;then
-		echo -e ${BBlue}"[*] Move nvim => nvim(old-config)...\n"
+		echo -e ${BBlue}"[*] Move nvim => nvim(old-config)...\n" ${Color_Off}
 
 
 	 	mv $HOME/.config/nvim $HOME/.config/"nvim(old-config)"
@@ -408,9 +408,9 @@ function cloneNvim(){
 
 	if test ! -d $HOME/.config/nvim;then
 
-		echo -e ${BBlue}"[*] Cloning nvim ... .\n"
+		echo -e ${BBlue}"[*] Cloning nvim ... .\n" ${Color_Off}
 
-		git clone $NV_REMOTE $HOME/.config/nvim
+		git clone --depth 1 $NV_REMOTE $HOME/.config/nvim
 
 		if test -d $HOME/.config/nvim;then
 			SETTIMEOUT "" 1s
@@ -427,7 +427,7 @@ function cloneNvim(){
 
 function print_warning(){
 
-	echo -e ${BPurple}"
+	echo -e ${BYellow}"
 	$(cat <<'EOF'
 	  
 
@@ -450,7 +450,7 @@ function print_logo() {
 
 
 
-echo -e ${BPurple}"
+echo -e ${BBlue}"
 	$(cat <<'EOF'
 
 
@@ -476,7 +476,7 @@ SETTIMEOUT "" 2s
 
 function print_enjoy(){
 
-echo -e ${Purple}"
+echo -e ${BBlue}"
 	$(cat <<'EOF'
 
 		███████╗███╗░░██╗░░░░░██╗░█████╗░██╗░░░██╗
